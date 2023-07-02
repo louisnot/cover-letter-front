@@ -40,7 +40,7 @@ export default function Form() {
             company: infoUser.company === undefined ? '' : infoUser.company
         }
         console.log(data)
-        axios.post(`localhost:8080/create-letter`, data, {params : {lng : language}})
+        axios.post(`http://127.0.0.1:8080/create-letter`, data, {params : {lng : language}})
         .then((response) => {
             console.log(response.data)
             let letterGenerated = ""
