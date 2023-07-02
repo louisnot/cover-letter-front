@@ -1,0 +1,102 @@
+.button {
+  align-items: center;
+  background-color: rgb(24, 24, 27);
+  border-color: (228, 228, 231);
+  border-radius: 6px;
+  font-size: 14px;
+  height: 32px;
+  line-height: 20px;
+  justify-content: center;
+  font-weight: 500;
+  color: #fff;
+  text-size-adjust: 100%;
+  width: 110px;
+}
+
+.disabled {
+  align-items: center;
+  background-color: rgb(154, 154, 156);
+  border-color: (228, 228, 231);
+  border-radius: 6px;
+  font-size: 14px;
+  height: 32px;
+  line-height: 20px;
+  justify-content: center;
+  font-weight: 500;
+  color: #000;
+  text-size-adjust: 100%;
+  width: 110px;
+}
+
+
+.select{
+  align-items: center;
+  background-color: rgb(202, 202, 202);
+  border-color: (228, 228, 231);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 32px;
+  line-height: 20px;
+  justify-content: center;
+  font-weight: 500;
+  color: #000;
+  text-size-adjust: 100%;
+  width: 110px;
+}
+
+.maindiv {
+  margin: auto;
+  padding: 2rem;
+  background-color: rgb(252, 252, 255);
+  border-width: 1px;
+  border-color: #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputstyle {
+  border-width: 1px;
+  margin-bottom: 3px;
+  border-color: rgb(228, 228, 231);
+  border-radius: 6px;
+  line-height: 26px;
+}
+
+.alert{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+}
+
+.error{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #cc3d3d;
+  border-color: #cc3d3d;
+}
+
+.bellbtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
