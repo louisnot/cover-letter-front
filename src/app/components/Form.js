@@ -4,7 +4,6 @@ import React, {useState, useRef, useEffect} from "react";
 import axios from "axios";
 import styles from '../styles.module.css'
 import Spinner from "./Spinner";
-import API_URL from '../config.js';
 
 export default function Form() {
 
@@ -41,7 +40,7 @@ export default function Form() {
             company: infoUser.company === undefined ? '' : infoUser.company
         }
         console.log(data)
-        axios.post(`${API_URL}/create-letter`, data, {params : {lng : language}})
+        axios.post(`localhost:8080/create-letter`, data, {params : {lng : language}})
         .then((response) => {
             console.log(response.data)
             let letterGenerated = ""
@@ -83,7 +82,7 @@ export default function Form() {
         let file = e.target.files[0]
         const formData = new FormData()
         formData.append('file', file)
-        axios.post(`${API_URL}/parse-resume`, formData,
+        axios.post(`localhost:8080/parse-resume`, formData,
         {
             headers : {
             'Content-type': 'multipart/form-data',
