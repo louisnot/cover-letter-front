@@ -13,7 +13,7 @@ export default function Home() {
         </span>
           ATTENTION PLEASE: Make sure you have read the generated letter before sending it.
           It may have generated some false information about yourself because chatgpt can sometimes
-          act like "yolo idc about what u tell me to write"
+          act like yolo idc about what u tell me to write
       </div>
       <Form></Form>
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
