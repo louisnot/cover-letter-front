@@ -82,7 +82,7 @@ export default function Form() {
         let file = e.target.files[0]
         const formData = new FormData()
         formData.append('file', file)
-        axios.post(`${process.env.NEXT_PUBLIC_LETTER_API_URL}/parse-resume`, formData,
+        axios.post(`${process.env.NEXT_PUBLIC_LETTER_API_URL}parse-resume`, formData,
         {
             headers : {
             'Content-type': 'multipart/form-data',
