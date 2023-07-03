@@ -40,7 +40,7 @@ export default function Form() {
             company: infoUser.company === undefined ? '' : infoUser.company
         }
         console.log(data)
-        axios.post(`http://127.0.0.1:8080/create-letter`, data, {params : {lng : language}})
+        axios.post(`${process.env.NEXT_PUBLIC_LETTER_API_URL}create-letter`, data, {params : {lng : language}})
         .then((response) => {
             console.log(response.data)
             let letterGenerated = ""
@@ -82,7 +82,7 @@ export default function Form() {
         let file = e.target.files[0]
         const formData = new FormData()
         formData.append('file', file)
-        axios.post(`${process.env.LETTER_API_URL}/parse-resume`, formData,
+        axios.post(`${process.env.NEXT_PUBLIC_LETTER_API_URL}/parse-resume`, formData,
         {
             headers : {
             'Content-type': 'multipart/form-data',
